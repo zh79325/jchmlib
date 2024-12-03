@@ -3,8 +3,8 @@ package org.jchmlib.app;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.ByteBuffer;
-import org.jchmlib.ChmFile;
-import org.jchmlib.ChmUnitInfo;
+import jchmlib.ChmFile;
+import jchmlib.ChmUnitInfo;
 
 @SuppressWarnings("WeakerAccess")
 public class ChmLibTest {

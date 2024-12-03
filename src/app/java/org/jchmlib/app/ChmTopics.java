@@ -1,7 +1,7 @@
 package org.jchmlib.app;
 
 import java.io.IOException;
-import org.jchmlib.ChmFile;
+import jchmlib.ChmFile;
 
 @SuppressWarnings("WeakerAccess")
 public class ChmTopics {

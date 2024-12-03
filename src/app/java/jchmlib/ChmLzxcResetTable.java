@@ -1,4 +1,4 @@
-package org.jchmlib;
+package jchmlib;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

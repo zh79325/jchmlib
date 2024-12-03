@@ -2,9 +2,9 @@ package org.jchmlib.app;
 
 import java.io.IOException;
 import java.io.PrintStream;
-import org.jchmlib.ChmEnumerator;
-import org.jchmlib.ChmFile;
-import org.jchmlib.ChmUnitInfo;
+import jchmlib.ChmEnumerator;
+import jchmlib.ChmFile;
+import jchmlib.ChmUnitInfo;
 
 @SuppressWarnings("WeakerAccess")
 public class ChmEnumDir {

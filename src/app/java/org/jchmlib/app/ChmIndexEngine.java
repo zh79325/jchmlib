@@ -21,10 +21,10 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Logger;
-import org.jchmlib.AbstractIndexSearcher;
-import org.jchmlib.ChmCollectFilesEnumerator;
-import org.jchmlib.ChmFile;
-import org.jchmlib.ChmUnitInfo;
+import jchmlib.AbstractIndexSearcher;
+import jchmlib.ChmCollectFilesEnumerator;
+import jchmlib.ChmFile;
+import jchmlib.ChmUnitInfo;
 
 public class ChmIndexEngine extends AbstractIndexSearcher {
 

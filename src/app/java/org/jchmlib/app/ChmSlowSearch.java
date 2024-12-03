@@ -3,8 +3,8 @@ package org.jchmlib.app;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import org.jchmlib.ChmFile;
-import org.jchmlib.ChmSearchEnumerator;
+import jchmlib.ChmFile;
+import jchmlib.ChmSearchEnumerator;
 
 @SuppressWarnings("WeakerAccess")
 public class ChmSlowSearch {

@@ -4,15 +4,15 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.ByteBuffer;
-import org.jchmlib.ChmEnumerator;
-import org.jchmlib.ChmFile;
-import org.jchmlib.ChmUnitInfo;
+import jchmlib.ChmEnumerator;
+import jchmlib.ChmFile;
+import jchmlib.ChmUnitInfo;
 
 @SuppressWarnings("WeakerAccess")
 public class ChmExtract {
 
     public static void main(String[] argv) throws IOException {
-
+        argv=new String[]{"/Users/eleme/Desktop/hk/播放库编程指南V7.3.9.x.chm","chm/hk_play"};
         if (argv.length < 1) {
             System.out.println("Usage: ChmExtract <chmfile> <output-directory>");
             return;
@@ -55,11 +55,21 @@ class Extractor implements ChmEnumerator {
             return;
         }
 
-        String fullPath = new File(basePath, path).toString();
+        File file = new File(basePath, path);
+        if(file.exists()){
+            file.delete();
+        }
+        File parentFile = file.getParentFile();
+        if(!parentFile.exists()){
+            parentFile.mkdirs();
+        }
 
+        String fullPath = file.toString();
+        System.out.println("out put  path=>"+file.getAbsolutePath());
         if (length != 0) {
             PrintStream out = null;
             try {
+                file.createNewFile();
                 out = new PrintStream(fullPath);
             } catch (IOException e) {
                 System.out.println("   fail while opening the newly created file "

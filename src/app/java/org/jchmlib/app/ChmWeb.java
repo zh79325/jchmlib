@@ -18,12 +18,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
-import org.jchmlib.ChmCollectFilesEnumerator;
-import org.jchmlib.ChmFile;
-import org.jchmlib.ChmIndexSearcher;
-import org.jchmlib.ChmSearchEnumerator;
-import org.jchmlib.ChmTopicsTree;
-import org.jchmlib.ChmUnitInfo;
+import jchmlib.ChmCollectFilesEnumerator;
+import jchmlib.ChmFile;
+import jchmlib.ChmIndexSearcher;
+import jchmlib.ChmSearchEnumerator;
+import jchmlib.ChmTopicsTree;
+import jchmlib.ChmUnitInfo;
 import org.jchmlib.app.net.HttpRequest;
 import org.jchmlib.app.net.HttpResponse;
 
@@ -180,6 +180,10 @@ public class ChmWeb extends Thread {
 
     InputStream getResourceAsStream(String requestedFile) {
         try {
+            InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream(requestedFile);
+            if(inputStream!=null){
+                return inputStream;
+            }
             if (resourcesPath != null) {
                 File f = new File(resourcesPath, requestedFile);
                 if (f.canRead()) {

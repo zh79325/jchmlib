@@ -1,4 +1,4 @@
-package org.jchmlib;
+package jchmlib;
 
 /**
  * Since enumeration has to check all CHM units,

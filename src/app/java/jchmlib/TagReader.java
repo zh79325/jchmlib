@@ -1,4 +1,4 @@
-package org.jchmlib;
+package jchmlib;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;

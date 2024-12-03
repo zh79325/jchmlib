@@ -1,8 +1,8 @@
 package org.jchmlib.app;
 
 import java.io.IOException;
-import org.jchmlib.ChmFile;
-import org.jchmlib.ChmUnitInfo;
+import jchmlib.ChmFile;
+import jchmlib.ChmUnitInfo;
 
 @SuppressWarnings("WeakerAccess")
 public class ChmFind {

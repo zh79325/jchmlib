@@ -28,12 +28,13 @@ var registerTabOnClick = function () {
 };
 
 var registerSingleFolderToggle = function (folder) {
+  console.log(folder);
   /** @namespace data.responseJSON **/
   $(folder).on("click", function (event) {
     event.stopPropagation();
-    if (event.target !== folder) {
-      return;
-    }
+    // if (event.target !== folder) {
+    //   return;
+    // }
     if ($(folder).hasClass("on")) {
       $(folder).removeClass("on");
       if (isIE6()) {

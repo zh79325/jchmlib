@@ -1,4 +1,4 @@
-package org.jchmlib;
+package jchmlib;
 
 @SuppressWarnings({"unused", "WeakerAccess"})
 class EncodingTable {

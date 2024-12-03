@@ -2,7 +2,7 @@
  * Copyright 2017 chimenchen. All rights reserved.
  */
 
-package org.jchmlib;
+package jchmlib;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
